@@ -38,7 +38,7 @@
     } \relative c'' {
       r1 * 4
       \repeat unfold 2 {
-        g8( a4) d-. cis4-. a8
+        g8( a4-.) d-. cis4-. a8
         g( a) d4-. cis8( a) g4
       }
     }
@@ -50,14 +50,11 @@
       toml4\fff r8 tomh4 r8 toml8 tomfl
       tomfl4 tomh r8 toml4 r8
       tomfl4 r8 tomh4 r8 toml8 tomfl
-      tomfl toml
-    }
+      tomfl tomh r4 tomh8-^\fff tomh-^ tomh-^ tomh-^
 
-    \new DrumStaff \with {
-      instrumentName = "Electric Snare"
-    } \drummode {
-      r1 * 3
-      r2 sne8-^ sne-^ sne-^ sne-^
+      \repeat unfold 2 {
+        bd4-> tomh-> r tomh-> bd-> tomh-> r tomh->
+      }
     }
 
     \new DrumStaff \with {
@@ -71,7 +68,7 @@
 
     \new DrumStaff \drummode {
       cymr8->\pppp cymr cymr cymr cymr-> cymr cymr cymr
-      \repeat unfold 3 {
+      \repeat unfold 7 {
         cymr-> cymr cymr cymr cymr-> cymr cymr cymr
       }
     }
