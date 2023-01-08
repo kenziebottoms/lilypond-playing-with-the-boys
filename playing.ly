@@ -15,36 +15,53 @@
   }
 
   \midi {
-    \tempo 4 = 142
+    \tempo 4 = 140
   }
 
   \new StaffGroup <<
     \new Staff \with {
-      instrumentName = "Reed Organ"
-      shortInstrumentName = "Reed"
-      midiInstrument = #"reed organ"
+      instrumentName = "Pan Flute"
+      shortInstrumentName = "Flute"
+      midiInstrument = #"pan flute"
     } \relative c''' {
       r1
 
-      r8 d-. cis-. e-. a,4-. g-.
-      r8 a-. g d'-. cis-.( g) a4-.
+      r8 d cis e a,4-. g-.
+      r8 a-. g-. d' cis( g) a4-.
+      g8( a) d,-. c-. d( e)
     }
 
     \new DrumStaff \with {
-      instrumentName = "Bass Drum"
-      shortInstrumentName = "B.D."
+      instrumentName = "Toms"
       midiInstrument = #"melodic tom"
     } \drummode {
-      toml4 r8 tomh4 r8 toml8 tomfl
+      toml4\fff r8 tomh4 r8 toml8 tomfl
       tomfl4 tomh r8 toml4 r8
       tomfl4 r8 tomh4 r8 toml8 tomfl
-      tomfl toml r4 toml8-> toml-> toml-> toml->
+      tomfl toml
+    }
+
+    \new DrumStaff \with {
+      instrumentName = "Electric Snare"
+    } \drummode {
+      r1 * 3
+      r2 sne8-^ sne-^ sne-^ sne-^
+    }
+
+    \new DrumStaff \with {
+      instrumentName = "Claps"
+    } \drummode {
+      r1
+      r2 hc8-^\fffff hc\f hc\mp hc\p
     }
 
     \new DrumStaff \with {
       instrumentName = "Tambourine"
     } \drummode {
-      cymr8 8 8 8 8 8 8 8
+      hh8\ppppp hh hh hh hh hh hh hh hh
+      \repeat unfold 3 {
+        hh hh hh hh hh hh hh hh hh
+      }
     }
   >>
 }
