@@ -24,7 +24,7 @@
       shortInstrumentName = "Reed"
       midiInstrument = #"reed organ"
     } \relative c''' {
-      r8 d cis e d b cis
-    } 
+      r8 d-. cis-. e-. a,4-. g-.
+    }
   >>
 }
