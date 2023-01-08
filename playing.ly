@@ -26,7 +26,7 @@
     } \relative c''' {
       r1
 
-      r8 d cis e a,4-. g-.
+      r8 d\p cis e a,4-. g-.
       r8 a-. g-. d' cis( g) a4-.
       g8( a) d,-. c-. d( e)
     }
@@ -53,14 +53,14 @@
     } \drummode {
       r1
       r2 hc8-^\fffff hc\f hc\mp hc\p
+      r1
+      r2 hc8-^\fff hc8-^ hc8-^ hc8-^
     }
 
-    \new DrumStaff \with {
-      instrumentName = "Tambourine"
-    } \drummode {
-      hh8\ppppp hh hh hh hh hh hh hh hh
+    \new DrumStaff \drummode {
+      cymr8->\pppp cymr cymr cymr cymr-> cymr cymr cymr
       \repeat unfold 3 {
-        hh hh hh hh hh hh hh hh hh
+        cymr-> cymr cymr cymr cymr-> cymr cymr cymr
       }
     }
   >>
