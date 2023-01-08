@@ -31,6 +31,18 @@
       g8( a) d,-. c-. d( e)
     }
 
+    \new Staff \with {
+      instrumentName = "Electric Guitar"
+      shortInstrumentName = "Guitar"
+      midiInstrument = #"overdriven guitar"
+    } \relative c'' {
+      r1 * 4
+      \repeat unfold 2 {
+        g8( a4) d-. cis4-. a8
+        g( a) d4-. cis8( a) g4
+      }
+    }
+
     \new DrumStaff \with {
       instrumentName = "Toms"
       midiInstrument = #"melodic tom"
