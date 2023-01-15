@@ -33,7 +33,7 @@
 
     \new Staff \with {
       instrumentName = "Electric Guitar"
-      shortInstrumentName = "Guitar"
+      shortInstrumentName = "E.G."
       midiInstrument = #"overdriven guitar"
     } \relative c'' {
       r1 * 4
@@ -46,19 +46,45 @@
     \new DrumStaff \with {
       instrumentName = "Toms"
       midiInstrument = #"melodic tom"
+      shortInstrumentName = "Toms"
     } \drummode {
-      toml4\fff r8 tomh4 r8 toml8 tomfl
-      tomfl4 tomh r8 toml4 r8
-      tomfl4 r8 tomh4 r8 toml8 tomfl
-      tomfl tomh r4 tomh8-^\fff tomh-^ tomh-^ tomh-^
+      toml4\fff r8 tomh4 r8 toml8 bd
+      bd4 tomh r8 toml4 r8
+      bd4 r8 tomh4 r8 toml8 bd
+      bd tomh r2
+    }
 
-      \repeat unfold 2 {
-        bd4-> tomh-> r tomh-> bd-> tomh-> r tomh->
+    \new DrumStaff \with {
+      instrumentName = "Snare"
+      shortInstrumentName = "Sn."
+    } \drummode {
+      r1 * 3
+      r2 sne8-^ sne-^ sne-^ sne-^
+
+      \repeat unfold 3 {
+        r4 sne-^ r4 sne-^
       }
     }
 
     \new DrumStaff \with {
-      instrumentName = "Claps"
+      instrumentName = "Bass Drum"
+      shortInstrumentName = "B.D."
+      midiInstrument = #35
+    } \drummode {
+      bd4 r4 r4. bd8
+      bd4 r2.
+      bd4 r4 r4. bd8
+      bd4 r2 r8 bd
+
+      \repeat unfold 2 {
+        bd4 r8 bd r2
+        bd4 r bd r
+      }
+    }
+
+    \new DrumStaff \with {
+      instrumentName = "Hand Claps"
+      shortInstrumentName = "H.C."
     } \drummode {
       r1
       r2 hc8-^\fffff hc\f hc\mp hc\p
@@ -66,10 +92,13 @@
       r2 hc8-^\fff hc8-^ hc8-^ hc8-^
     }
 
-    \new DrumStaff \drummode {
-      cymr8->\pppp cymr cymr cymr cymr-> cymr cymr cymr
+    \new DrumStaff \with {
+      instrumentName = "Tambourine"
+      shortInstrumentName = "Tamb."
+    } \drummode {
+      tamb8->\ppppp tamb tamb tamb tamb-> tamb tamb tamb
       \repeat unfold 7 {
-        cymr-> cymr cymr cymr cymr-> cymr cymr cymr
+        tamb-> tamb tamb tamb tamb-> tamb tamb tamb
       }
     }
   >>
