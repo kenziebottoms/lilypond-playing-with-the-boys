@@ -31,6 +31,7 @@
       r8 d\p cis e a,4-. g-.
       r8 a-. g-. d' cis( g) a4-.
       g8( a) d,-. c-. d( e) r4
+      \break
 
       % 5 // A
       \mark \default
@@ -49,6 +50,17 @@
         g8( a4-.) d-. cis4-. a8
         g( a) d4-. cis8( a) g4
       }
+      \break
+
+      % 9
+      g8( a4-.) d-. cis4-. a8
+      g( a) d4-. cis8( a) g4
+      g8( a4-.) d-. cis4-. g8
+      a a a r r2
+
+      % 13 // B
+      \mark \default
+      r1
     }
 
     \new DrumStaff \with {
@@ -59,7 +71,7 @@
       toml4\fff r8 tomh4 r8 toml8 bd
       bd4 tomh r8 toml4 r8
       bd4 r8 tomh4 r8 toml8 bd
-      bd tomh r2.
+      bd tomh r4 r2
 
       % 5 // A
     }
@@ -82,9 +94,9 @@
       shortInstrumentName = "B.D."
       midiInstrument = #35
     } \drummode {
-      bd4 r4 r4. bd8
-      bd4 r2.
-      bd4 r4 r4. bd8
+      bd4 r2 r8 bd8
+      bd4 r4 r2
+      bd4 r2 r8 bd8
       bd4 r2 r8 bd
 
       % 5 // A
