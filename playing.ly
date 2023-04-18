@@ -114,23 +114,6 @@
     }
 
     \new DrumStaff \with {
-      instrumentName = "Bass Drum"
-      shortInstrumentName = "B.D."
-      midiInstrument = #36
-    } \drummode {
-      bd4 r2 r8 bd8
-      bd4 r4 r2
-      bd4 r2 r8 bd8
-      bd4 r2 r8 bd
-
-      % 5 // A
-      \repeat unfold 2 {
-        bd4 r8 bd r2
-        bd4 r bd r
-      }
-    }
-
-    \new DrumStaff \with {
       instrumentName = "Hand Claps"
       shortInstrumentName = "H.C."
     } \drummode {
@@ -140,16 +123,6 @@
       r2 hc8-^\fff hc8-^ hc8-^ hc8-^
 
       % 5 // A
-    }
-
-    \new DrumStaff \with {
-      instrumentName = "Tambourine"
-      shortInstrumentName = "Tamb."
-    } \drummode {
-      tamb8->\ppppp tamb tamb tamb tamb-> tamb tamb tamb
-      \repeat unfold 7 {
-        tamb-> tamb tamb tamb tamb-> tamb tamb tamb
-      }
     }
   >>
 }
