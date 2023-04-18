@@ -39,6 +39,27 @@
     }
 
     \new Staff \with {
+      instrumentName = "Electric Bass"
+      shortInstrumentName = "Bass"
+      midiInstrument = #"electric bass (finger)"
+    } \relative c, {
+      r1 * 4
+
+      % 5 // A
+      r1 * 4
+
+      % todo: noise
+      % 9
+      g8( a) a a a a a a
+      a a a a a a a a
+      % 11
+      g8( a) a a a a a a
+      a a a r8 r2
+
+      % 13 // B
+    }
+
+    \new Staff \with {
       instrumentName = "Electric Guitar"
       shortInstrumentName = "E.G."
       midiInstrument = #"overdriven guitar"
