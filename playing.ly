@@ -84,15 +84,18 @@
       r2 sne8-^ sne-^ sne-^ sne-^
 
       % 5 // A
-      \repeat unfold 3 {
+      \repeat unfold 7 {
         r4 sne-^ r4 sne-^
       }
+
+      % 13 // B
+      r1
     }
 
     \new DrumStaff \with {
       instrumentName = "Bass Drum"
       shortInstrumentName = "B.D."
-      midiInstrument = #35
+      midiInstrument = #36
     } \drummode {
       bd4 r2 r8 bd8
       bd4 r4 r2
