@@ -35,7 +35,8 @@
 
       % 5 // A
       \mark \default
-      r4
+      r2 g,8 a r4
+      r4. d,8 e g a4-.
     }
 
     \new Staff \with {
